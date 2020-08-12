@@ -599,6 +599,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_VENDOR_PROPERTIES += \
     vendor.power.pasr.enabled=false
 
+# Perf
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.vendor.extension_library=libqti-perfd-client.so
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
@@ -644,7 +648,8 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.xiaomi-libperfmgr
+    android.hardware.power-service.xiaomi-libperfmgr \
+    libqti-perfd-client
 
 # Public libraries
 PRODUCT_COPY_FILES += \
