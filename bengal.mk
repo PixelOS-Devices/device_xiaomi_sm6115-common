@@ -652,6 +652,9 @@ PRODUCT_PACKAGES += \
     android.hardware.power-service.xiaomi-libperfmgr \
     libqti-perfd-client
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+
 # Public libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
