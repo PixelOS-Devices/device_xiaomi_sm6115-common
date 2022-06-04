@@ -650,6 +650,7 @@ PRODUCT_COPY_FILES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.xiaomi_bengal-libperfmgr \
+    android.hardware.power@1.3.vendor \
     libqti-perfd-client
 
 PRODUCT_COPY_FILES += \
